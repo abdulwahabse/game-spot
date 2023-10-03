@@ -29,6 +29,7 @@ function App() {
         base: "1fr",
         lg: "200px 1fr",
       }}
+      paddingX={5}
     >
       <GridItem area="nav">
         <NavBar
@@ -38,7 +39,7 @@ function App() {
         />
       </GridItem>
       <Show above="lg">
-        <GridItem area="aside" paddingX={5}>
+        <GridItem area="aside" paddingRight={5}>
           <GenreList
             selectedGenre={gameQuery.genre}
             onSelectGenre={(genre) =>
