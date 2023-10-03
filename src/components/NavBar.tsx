@@ -8,7 +8,7 @@ interface Props {
 
 export default function NavBar({ onSearch }: Props) {
   return (
-    <HStack padding="10px">
+    <HStack paddingY="10px">
       <Box fontSize="2xl">🎮</Box>
       <SearchInput onSearch={onSearch} />
       <ColorModeSwitch />
